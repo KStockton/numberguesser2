@@ -1,0 +1,274 @@
+* {
+  font-family: Open Sans;
+  margin: 0px;
+  padding: 0px;
+}
+.wrapper {
+  display: flex;
+}
+
+/*header*/
+header {
+  background-color: #404041; 
+  text-align: center;
+  width: 100%;
+}
+
+.thicker {
+  font-size: 70px;
+  font-weight: 700;
+}
+
+
+.thicker::after {
+  content: 'GUESSER';
+  font-size: 70px;
+  font-weight: 300;
+}
+
+.ultimate-title {
+  color: #FFFFFF;
+  font-size: 22px;
+  padding-bottom: 15px;
+}
+
+.ultimate-challenger-edition {
+  display: flex;
+  justify-content: center;
+}
+.line {
+  border-bottom: 2px solid #FFF;
+  margin: 0px 15px 28px 15px;
+  width: 122px;
+}
+
+/*main top box*/
+
+
+.flex-section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+h1, .number-returned {
+  color: #DD1972;
+  display: inline;
+  padding: 10px;
+  text-align: center;
+}
+h4 {
+  font-weight: lighter;
+}
+p, label {
+  color: #6E6E6E;
+  font-weight: 300;
+}
+.min-entry, .max-entry {
+  color: #6E6E6E;
+  font-weight: bold;
+  text-decoration: underline;
+}
+#user1-guess, #user2-guess {
+  height: 30px;
+  width: 190px;
+}
+#user1-name, #user2-name {
+  height: 30px;
+  width: 275px;
+}
+#submit-guess-input {
+  height: 30px;
+  width: 400px;
+}
+.min-error-message, .max-error-message {
+  color: #DD1972;
+  display: inline-block;
+  padding-right: 45px;
+}
+.number-returned {
+  font-size: 70px;
+  font-weight: 700;
+}
+h2 {
+  color: #FFFFFF;
+  font-size: 50px;
+  font-weight: lighter;
+}
+h3 {
+  color: #DD1972;
+}
+
+/* left column */
+.left-column {
+  background-color: #F7F7F7;
+  width: 100%;
+  height: 90vh;
+}
+.set-range-box {
+  background-color: #FFFFFF;
+  border: 2px #D0D2D3 solid;
+  margin: 15px 10px 10px 10px;
+  padding: 5px 15px;
+}
+.player-box {
+  background-color: #FFFFFF;
+  border: 2px #D0D2D3 solid;
+  margin: 10px;
+  padding: 18px;
+}
+.score-box {
+  background-color: #FFFFFF;
+  border: 2px #D0D2D3 solid;
+  margin: 10px;
+  padding: 10px;
+}
+#vl {
+  border-left: 2px solid #D0D2D3;
+  display: inline-block;
+  height: 94px;
+}
+.clear, .reset {
+  font-weight: bold;
+}
+input, .min-range-section, .max-range-section {
+  display: inline-block;
+  font-weight: bold;
+}
+.challenger-name, .challenger-guess {
+  display: inline-block;
+}
+.challenger-latest-score {
+  display: inline-block;
+  padding: 0px 55px;
+  text-align: center;
+  text-align: center;
+}
+.user1-num-returned, .user2-num-returned {
+  color: #F74D9B;
+  font-size: 50px;
+  font-weight: bold;
+}
+.latest-score-text, .challenger1-text, .challenger2-text {
+  font-weight: bold;
+  padding: 5px 0px;
+  text-align: left;
+}
+.name1, .name2 {
+  font-size: 14px;
+  font-weight: bold;
+}
+.card-players-text {
+  font-weight: bold;
+  padding: 8px;
+  text-align: center;
+}
+
+.vs {
+  font-weight: lighter;
+}
+
+.right-column {
+  background-color: #D1D2D4;
+  border-left: 2px solid #B4B4B4;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+.winner-stats {
+  background-color: #FFF;
+  border: 2px solid #B4B4B4;
+  height: auto;
+  margin: 5px;
+  padding: 5px;
+  width: 530px;
+}
+.large-winner-text-bold {
+  font-size: 25px;
+  font-weight: 700;
+}
+.large-winner-text {
+  font-size: 25px;
+  font-weight: 300;
+}
+.seconds  {
+  font-weight: 700;
+}
+hr {
+  margin: 3px;
+  border-color: 2px solid #F7F7F7;
+  display: inline-block;
+  width: 90%;
+}
+
+/* player win cards */
+p.number-of-guesses, .time-to-win, .fa-times-circle {
+  display: inline-block;
+}
+div.counter-time-and-delete {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 8px;  
+}
+
+/* buttons */
+button, .reset, .clear {
+  color: #FFFFFF;
+  display: inline-block;
+  font-weight: bold;
+}
+.all-buttons {
+  display: flex;
+}
+.update-range {
+  background-color: #6E6E6E;
+  border-radius: 20px;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: bold;
+  height: 30px;
+  width: 90px;
+}
+
+#min-range, #max-range {
+  height: 30px;
+  width: 185px;
+}
+
+.submit-guess-button {
+  background-color: #6E6E6E;
+  border-radius: 20px;
+  font-size: 14px;
+  height: 30px;
+  margin: 10px;
+  width: 33%;
+}
+
+.clear {
+  background-color: #6E6E6E;
+  border-radius: 20px;
+  font-size: 14px;
+  height: 30px;
+  margin: 10px;
+  position: sticky;
+  width: 33%;
+}
+
+.clear:disabled {
+  background-color: #D0D2D3;
+}
+
+.reset {
+  background-color: #6E6E6E;
+  border-radius: 20px;
+  font-size: 14px;
+  height: 30px;
+  margin: 10px;
+  width: 33%;
+}
+
+.reset:disabled {
+  background-color: #D0D2D3;
+}
+/*Card Info*/

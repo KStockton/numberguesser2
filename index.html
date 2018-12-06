@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Number Guesser 2</title>
+  <link rel="stylesheet" type="text/css" href="normalize.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <!-- header -->
+  <header>
+    <h1 class="thicker">NUMBER</h1>
+    <section class = "ultimate-challenger-edition">
+      <div class = "line"></div>
+        <p class = "ultimate-title">ULTIMATE CHALLENGER EDITION</p>
+      <div class = "line"></div>
+    </section>
+  </header>
+  <!-- main -->
+  <main class="wrapper">
+    <section class="left-column">
+      <section class="flex-section">
+        <form>
+          <div class = "set-range-box">
+            <p class = "challenger1-text">Set Range</p>
+            <div class="min-range-section">
+            <p>Min Range</p>
+            <input type="number" id="min-range">
+          </div>
+          <div class="max-range-section">
+            <p>Max Range</p>
+            <input type="number" id="max-range">
+            </div>
+            <input type="submit" value="UPDATE" class="update-range">
+            <br>
+            <p class="min-error-message"></p>
+            <p class = "max-error-message"></p>
+          </div>
+      <section class = "challenger-left-side">
+        <div class = "player-box">
+          <div class="current-range">
+            <p>The current range is <span class="min-entry">1</span> to <span class="max-entry">100</span></p>
+          </div>
+          <p class="min-entry"></p>
+          <p class="max-entry"></p>
+          <p class = "challenger1-text">Challenger 1</p>
+    <div class = "challenger-name">
+      <p>Name</p>
+      <input type="text" id="user1-name">
+    </div>
+    <div class = "challenger-guess">
+      <p>Guess</p>
+      <input type="number" id="user1-guess">
+    </div>
+      <p class = "challenger2-text">Challenger 2</p>
+    <div class = "challenger-name">
+      <p>Name</p>
+      <input type="text" id="user2-name">
+    </div>
+    <div class = "challenger-guess">
+      <p>Guess</p>
+      <input type="number" id="user2-guess">
+    </div>
+    <div class = "all-buttons">
+      <button class="submit-guess-button" type="submit">SUBMIT GUESS</button>
+      <input class="clear" type="reset" value="CLEAR GAME">
+      <button class="reset" type="submit">RESET GAME</button>
+    </div>
+    </div>
+  </section>
+  <div class = "score-box">
+    <p class = "latest-score-text'>Latest Score</p>
+      <article class="challenger-latest-score'>
+        <p class = "name1">Challenger 1 Name</p>
+        <p class = "current-guess-text">current guess</p>
+        <p class = "user1-num-returned">?</p>
+        <h4 class="guess1-feedback"></h4>
+      </article>
+        <vl id="vl"></vl>
+    <article class="challenger-latest-score">
+      <p class="name2">Challenger 2 Name</p>
+      <p>current guess</p>
+      <p class="user2-num-returned">?</p>
+      <h4 class="guess2-feedback"></h4>
+    </article>
+  </div>
+  </form>
+  </section>
+</section>
+<section class="right-column">
+  <section id = "challenger-summary" class="flex-section">
+      `<div> 
+        <p class = 'card-players-text'> Challenger 1 <span class = 'vs'>VS.</span> Challenger 2</p> 
+        <hr> 
+      </div> 
+      <div> 
+        <p class = 'large-winner-text-bold'> CHALLENGER 1</p> 
+        <p class = 'large-winner-text'>WINNER</p> 
+        <hr> 
+      </div> 
+      <div class = 'counter-time-and-delete'> 
+        <p class = 'number-of-guesses'><span class = 'seconds'>32</span> GUESSES</p> 
+        <p class = 'time-to-win'> <span class = 'seconds'>4 minutes and 32 seconds</p> 
+        <i class="fas fa-times-circle"></i> 
+      </div>`;
+  </section>
+</section>
+</main>
+<script type="text/javascript" src= "main.js"></script>
+</body>
+</html>
