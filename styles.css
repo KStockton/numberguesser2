@@ -3,9 +3,6 @@
   margin: 0px;
   padding: 0px;
 }
-.wrapper {
-  display: flex;
-}
 
 /*header*/
 header {
@@ -44,12 +41,8 @@ header {
 
 /*main top box*/
 
-
-.flex-section {
-  align-items: center;
+.wrapper {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
 }
 
 h1, .number-returned {
@@ -104,6 +97,7 @@ h3 {
 .left-column {
   background-color: #F7F7F7;
   width: 100%;
+  min-width: 450px;
   height: 90vh;
 }
 .set-range-box {
@@ -170,6 +164,7 @@ input, .min-range-section, .max-range-section {
 }
 
 .right-column {
+  min-width: 450px;
   background-color: #D1D2D4;
   border-left: 2px solid #B4B4B4;
   padding: 20px;
@@ -270,5 +265,13 @@ button, .reset, .clear {
 
 .reset:disabled {
   background-color: #D0D2D3;
+}
+
+@media and screen (min-width: 900px){
+  .wrapper {
+    display: flex; 
+    flex-wrap: wrap; 
+
+  }
 }
 /*Card Info*/
