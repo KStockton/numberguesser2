@@ -82,17 +82,19 @@ p, label {
   height: 30px;
   width: 400px;
 }
-.min-error-message, .max-error-message {
+
+.min-error-message .max-error.message {
   color: #DD1972;
   display: inline-block;
   padding-right: 45px;
 }
+
 .number-returned {
   font-size: 70px;
   font-weight: 700;
 }
 h2 {
-  color: #FFFFFF;
+   color: #FFFFFF;
   font-size: 50px;
   font-weight: lighter;
 }

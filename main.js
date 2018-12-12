@@ -31,38 +31,44 @@ submitGuess.addEventListener('click', submitGame);
 
 // functions 
 
-function resetGame() {
-  resetButton.disabled = true;
 
-  document.getElementById("user1-guess").value = '';
-  document.getElementById("user2-guess").value = '';
-  updateChallenger1Guess.innerText = "?";
-  updateChallenger2Guess.innerText = "?";
-  updateChallenger1Name.innerText = "Challenger 1";
-  updateChallenger2Name.innerText = "Challenger 2";
-  responseOne.innerText = '';
+
+function resetGame() {
+  // resetButton.disabled = true;
+
+  document.getElementById('user1-guess').value = '';
+  document.getElementById('user2-guess').value = '';
+  document.getElementById('user1-name').value = '';
+  document.getElementById('user2-name').value = '';
+  minRange.value = '';
+  maxRange.value = '';
+  visibleMinRange.innerText = '1';
+  visibleMaxRange.innerText = '100';
+  updateChallenger1Guess.innerText = '?';
+  updateChallenger2Guess.innerText = '?';
+  updateChallenger1Name.innerText = 'Challenger 1';
+  updateChallenger2Name.innerText = 'Challenger 2';
   responseTwo.innerText = '';
-  document.getElementById('#user2-name') = "Enter Name";
-  document.getElementById('#user1-name') = "Enter Name";
+  responseOne.innerText = '';
+
 }
 
 
 function clearGame() {
-  clearButton.disabled = false;
+  // clearButton.disabled = false;
   updateChallenger1Guess.innerText = 0;
   updateChallenger2Guess.innerText = 0;
-  document.getElementById("user2-guess").value = "";
-  document.getElementById("user1-guess").value = "";
+  document.getElementById('user2-guess').value = '';
+  document.getElementById('user1-guess').value = '';
 }
  
 function updateRange() {
-  updateButton.disabled = true;
+  // updateButton.disabled = true;
   var min = parseInt(minRange.value) || 1;
   var max = parseInt(maxRange.value) || 100;
   visibleMinRange.innerText = min;
   visibleMaxRange.innerText = max;
   numberGenerated = newNumber(max, min);
-  console.log(numberGenerated);
 };
 
 function newNumber(max, min) {
@@ -70,8 +76,9 @@ function newNumber(max, min) {
 }
 
 function submitGame() {
- var playerOneInput = parseInt(challenger1Input.value);
- var playerTwoInput = parseInt(challenger2Input.value);
+// submitGuess.disabled = false;
+ var playerOneInput = challenger1Input.value;
+ var playerTwoInput = challenger2Input.value;
  var playerOneGuess = parseInt(challenger1Guess.value);
  var playerTwoGuess = parseInt(challenger2Guess.value);
  updateChallenger1Name.innerText = playerOneInput;
@@ -80,7 +87,7 @@ function submitGame() {
  updateChallenger2Guess.innerText = playerTwoGuess; 
 
  if (playerOneGuess === numberGenerated) { 
-   responseOne.innerText = 'Curry';
+   responseOne.innerText = 'Boom';
 
   } else if (playerOneGuess < numberGenerated) {
    responseOne.innerText = 'Too Low';
@@ -90,7 +97,7 @@ function submitGame() {
   }
 
 if (playerTwoGuess === numberGenerated) { 
-   responseTwo.innerHTML = 'Curry';
+   responseTwo.innerHTML = 'Boom';
 
   } else if (playerTwoGuess < numberGenerated) {
    responseTwo.innerHTML = 'Too Low';
@@ -103,16 +110,31 @@ if (playerTwoGuess === numberGenerated) {
 
 
 
-// function 
+function updateRange() {
+  // updateButton.disabled = true;
+  var min = parseInt(minRange.value) || 1;
+  var max = parseInt(maxRange.value) || 100;
+  visibleMinRange.innerText = min;
+  visibleMaxRange.innerText = max;
+  numberGenerated = newNumber(max, min);
+  errorMessage();
+};
 
-// function userInputNumbers(min,max); {
-//   Math.randomNumber()
- 
-
-// Math.floor(Math.randomNumber
-
-
-
-
-
-// function resetGame
+function errorMessage() {
+  if (minRange.value === '') {
+    document.querySelector('.min-error-message').innerHTML = 
+    `<i class="fas fa-exclamation-triangle"></i>
+    Enter a min range`;
+    minRange.style.border = "1px solid #DD1972";
+    } else {
+      document.querySelector('.min-error-message').innerHTML = '';
+  }
+  if (maxRange.value === '') {
+    document.querySelector('.max-error-message').innerHTML = 
+    `<i class="fas fa-exclamation-triangle"></i>
+    Enter a min range`;
+    maxRange.style.border = "1px solid #DD1972";
+    } else {
+      document.querySelector('.max-error-message').innerHTML = '';
+}
+}
