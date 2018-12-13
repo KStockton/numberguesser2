@@ -132,7 +132,7 @@ function errorMessage() {
   if (maxRange.value === '') {
     document.querySelector('.max-error-message').innerHTML = 
     `<i class="fas fa-exclamation-triangle"></i>
-    Enter a min range`;
+    Enter a max range`;
     maxRange.style.border = "1px solid #DD1972";
     } else {
       document.querySelector('.max-error-message').innerHTML = '';
