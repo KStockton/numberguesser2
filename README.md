@@ -16,9 +16,10 @@ This goal of the project  build a game where a two users can guess a number betw
 * Michael King Stockton
 
 ## Final Site Comp
-
+![comp view](images/comp.png)
 
 ### Our Version
-
+![desktop](images/NGimg.pn)
 
 ### mobile version
+![mobile](images/mobileview.png)
