@@ -345,6 +345,14 @@ button, .reset, .clear {
   width: 75%
 }
 
+.vl {
+  display: none; 
+}
+
+.score-box {
+  margin-bottom: 10px;
+}
+
 
 
 
@@ -370,12 +378,21 @@ button, .reset, .clear {
   display: flex;
   justify-content: center;
   }
+
 .line {
   border-bottom: 2px solid #FFF;
   margin: 0px 15px 28px 15px;
   width: 122px;
   }
-}
+
+  .vl {
+    display: none; 
+  }
+
+  .score-box {
+    margin-bottom: 10px;
+  }
 
 }
+
 
